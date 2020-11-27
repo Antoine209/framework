@@ -1,0 +1,14 @@
+home:
+  path: /index
+  methods: ['GET']
+
+
+client:
+  path: /client/prenom/{prenom}
+  requirements:
+    url: '[a-z]+(?:-)[a-z]*'
+
+autre:
+  path: /{suite}
+  requirements:
+    url: '[a-z]*'
