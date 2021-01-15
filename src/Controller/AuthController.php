@@ -71,6 +71,6 @@ class AuthController extends AbstractController
             throw $this->createNotFoundException('Aucun user ne correspond à l\'id'.$id);
         }
 
-        return $this->render("user.html.twig", ["nom" => $res->getNom()]);
+        return $this->render("user.html.twig", ["email" => $res->getEmail()]);
     }
 }
