@@ -65,7 +65,7 @@ class AuthController extends AbstractController
      * @Route("/user/{id}", name="user", requirements={"id"="\d+"})
      */
     public function showUser($id) {
-        $res=$this->getDoctrine()->getRepository('User')->find($id);
+        $res=$this->getDoctrine()->getRepository('UserRepository')->find($id);
 
         if(!$res) {
             throw $this->createNotFoundException('Aucun user ne correspond à l\'id'.$id);
