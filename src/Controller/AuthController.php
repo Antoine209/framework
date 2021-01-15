@@ -53,8 +53,9 @@ class AuthController extends AbstractController
         if ($finalForm->isSubmitted() && $finalForm->isValid()) {
             $data = $finalForm->getData();
 
+            var_dump($finalForm);
             var_dump($data);
-            var_dump($data.$this->get(0));
+            var_dump($data[1]);
 
             /*
             $entityManager->setEmail($data);

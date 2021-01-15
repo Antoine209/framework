@@ -217,7 +217,7 @@
       <workItem from="1610092830465" duration="29340000" />
       <workItem from="1610631443347" duration="4111000" />
       <workItem from="1610636876589" duration="5115000" />
-      <workItem from="1610697191845" duration="10798000" />
+      <workItem from="1610697191845" duration="10914000" />
     </task>
     <task id="LOCAL-00001" summary="mise à jour de mon git">
       <created>1610701872667</created>
@@ -289,7 +289,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610708359308</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ajout ORM">
+      <created>1610708427512</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610708427512</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ajout ORM">
+      <created>1610708461385</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610708461385</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
