@@ -18,6 +18,7 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Constraints\Regex;
 use Doctrine\ORM\EntityManagerInterface;
+use function Webmozart\Assert\Tests\StaticAnalysis\email;
 
 class AuthController extends AbstractController
 {
@@ -52,7 +53,8 @@ class AuthController extends AbstractController
         if ($finalForm->isSubmitted() && $finalForm->isValid()) {
             $data = $finalForm->getData();
 
-            var_dump($data.password);
+            var_dump($data);
+            var_dump($data.email("test"));
 
             /*
             $entityManager->setEmail($data);
