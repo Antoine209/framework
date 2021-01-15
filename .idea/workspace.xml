@@ -24,7 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81c012b7-9637-4bb0-a662-4584a32823b2" name="Default Changelist" comment="mise à jour de mon git">
+    <list default="true" id="81c012b7-9637-4bb0-a662-4584a32823b2" name="Default Changelist" comment="ajout ORM">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AuthController.php" afterDir="false" />
     </list>
@@ -217,7 +217,7 @@
       <workItem from="1610092830465" duration="29340000" />
       <workItem from="1610631443347" duration="4111000" />
       <workItem from="1610636876589" duration="5115000" />
-      <workItem from="1610697191845" duration="9248000" />
+      <workItem from="1610697191845" duration="9804000" />
     </task>
     <task id="LOCAL-00001" summary="mise à jour de mon git">
       <created>1610701872667</created>
@@ -226,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610701872667</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajout ORM">
+      <created>1610707174252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610707174253</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +253,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mise à jour de mon git" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise à jour de mon git" />
+    <MESSAGE value="ajout ORM" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout ORM" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
