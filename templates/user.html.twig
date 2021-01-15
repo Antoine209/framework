@@ -2,8 +2,9 @@
 
 {% block body %}
     <title>list user</title>
-
-    {%  for elmt in lst %}
-        {{ elmt.email }}
-    {% endfor %}
+    <ul>
+        {%  for elmt in lst %}
+            <li>{{ elmt.email }}</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
