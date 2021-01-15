@@ -32,8 +32,8 @@ class AuthController extends AbstractController
         $login = [];
         $form = $this->createFormBuilder($login);
         $contrainte = new NotBlank();
-        /*$entityManager = $this->getDoctrine()->getManager();
-        $user = new User();*/
+        $entityManager = $this->getDoctrine()->getManager();
+        $user = new User();
 
         $form->add("email", EmailType::class, ['constraints' => [$contrainte, new Length(['min'=>3])]])
              ->add("password", RepeatedType::class, [
@@ -53,16 +53,8 @@ class AuthController extends AbstractController
         if ($finalForm->isSubmitted() && $finalForm->isValid()) {
             $data = $finalForm->getData();
 
-            var_dump($data);
-            var_dump($data->getEmail());
-
-            /*
-            $entityManager->setEmail($data);
-            $entityManager->setPassword($data);
-            */
-
-            /*$entityManager->persist($user);
-            $entityManager->flush();*/
+            $entityManager->persist($user);
+            $entityManager->flush();
 
             return $this->render("authok.html.twig", ["data" => $data]);
         }
