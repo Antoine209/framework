@@ -1,6 +1,14 @@
 <?php
 
-use Symfony\Component\Routing\Matcher\UrlMatcher;
+use App\Controller\ClientController;
+use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
+
+return function (RoutingConfigurator $routes) {
+    $routes->add("client_info", "/client/prenom/{prenom}")
+        ->controller([ClientController::class, "info"]);
+};
+
+/*use Symfony\Component\Routing\Matcher\UrlMatcher;
 use Symfony\Component\Routing\RequestContext;
 use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\RouteCollection;
@@ -23,4 +31,4 @@ $analyser = new UrlMatcher($collection, $uncontexte);
 
 $findRoute = $analyser->match('/toto/tu');
 
-var_dump($findRoute);
+var_dump($findRoute);*/

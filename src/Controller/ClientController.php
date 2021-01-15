@@ -3,22 +3,31 @@
 
 namespace App\Controller;
 
-use http\Client\Response;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
- * @Route("/client)
+ * @Route("/client")
  * Class ClientController
  * @package App\Controller
  */
-class ClientController
+class ClientController extends AbstractController
 {
     /**
-     * @Route("/prenom/{prenom}", name="client_info")
+     * @Route("/prenom/{prenom<^[a-zA-Z](-?[a-zA-Z])*>}", name="client_info")
      * @param $prenom
      * @return Response
      */
-    function info($prenom) {
-        return new Response("le prénom est $prenom");
+    public function info($prenom) {
+        return new Response("le prénom est $prenom", 200, ["Content-Type" => "text/plain"]);
+    }
+
+    /**
+     * @Route("/clients", name="Clients", Options={"ouverture":"8-17"})
+     */
+    public function home(): Response
+    {
+        return $this->render('event/index.html.twig');
     }
 }

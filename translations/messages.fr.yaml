@@ -1,0 +1,2 @@
+password_invalid_pattern: le mot de passe est incorrect (pattern)
+password_blank: le mot de passe doit avoir au moins 1 caractère

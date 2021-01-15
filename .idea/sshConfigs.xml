@@ -2,8 +2,8 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="insset.ovh" id="7d817253-949a-403b-8cff-66d3a0ea83c9" keyPath="D:\Études\LP\PHP\GitHub\framework\ssh_keys\id_rsa" port="22" nameFormat="DESCRIPTIVE" username="sftp.antoine.baisadouli" />
-      <sshConfig host="insset.ovh" id="f3d5cfa6-dff4-4ace-8f30-18c28a6b520f" keyPath="D:\Études\LP\PHP\GitHub\framework\ssh_keys\id_rsa" port="22" nameFormat="DESCRIPTIVE" username="antoine.baisadouli" />
+      <sshConfig host="insset.ovh" id="7d817253-949a-403b-8cff-66d3a0ea83c9" keyPath="D:\Etudes\LP\PHP\GitHub\framework\ssh_keys\id_rsa" port="22" nameFormat="DESCRIPTIVE" username="sftp.antoine.baisadouli" />
+      <sshConfig host="insset.ovh" id="f3d5cfa6-dff4-4ace-8f30-18c28a6b520f" keyPath="D:\Etudes\LP\PHP\GitHub\framework\ssh_keys\id_rsa" port="22" nameFormat="DESCRIPTIVE" username="antoine.baisadouli" />
     </configs>
   </component>
 </project>

@@ -2,11 +2,13 @@ home:
   path: /index
   methods: ['GET']
 
-
 client:
   path: /client/prenom/{prenom}
+  controller: App\Controller\ClientController::info
+  defaults:
+    prenom: prenomDefaults
   requirements:
-    url: '[a-z]+(?:-)[a-z]*'
+    prenom: "^[a-zA-Z](-?[a-zA-Z])*"
 
 autre:
   path: /{suite}

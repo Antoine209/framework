@@ -1,0 +1,33 @@
+<?php
+
+require_once '../vendor/autoload.php';
+
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Forms;
+
+$formFactory = Forms::createFormFactory();
+$builder = $formFactory->createBuilder();
+
+$builder->add('nom', TextType::class)
+->add('btSubmit', SubmitType::class);
+
+$form = $builder->getForm();
+
+$form->handleRequest();
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="form" action="formulaireAction.php" method="post">
+    <input name="form[nom]" type="text">
+    <input name="form[btSubmit]" type="submit">
+</form>
+</body>
+</html>
