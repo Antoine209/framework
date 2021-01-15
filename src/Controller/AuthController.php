@@ -54,7 +54,8 @@ class AuthController extends AbstractController
             $data = $finalForm->getData();
 
             var_dump($data);
-            var_dump($data.email("test"));
+            var_dump($data[0]);
+            var_dump($data[1]);
 
             /*
             $entityManager->setEmail($data);
