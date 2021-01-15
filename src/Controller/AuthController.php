@@ -62,15 +62,15 @@ class AuthController extends AbstractController
     }
 
     /**
-     * @Route("/user/{id}", name="user", requirements={"id"="\d+"})
+     * @Route("/users", name="users")
      */
-    public function showUser($id) {
-        $res = $this->getDoctrine()->getRepository('App:User')->find($id);
+    public function showUsers() {
+        $lst = $this->getDoctrine()->getRepository('App:User')->findAll();
 
-        if(!$res) {
-            throw $this->createNotFoundException('Aucun user ne correspond à l\'id'.$id);
+        if(!$lst) {
+            throw $this->createNotFoundException('Aucun user trouvé');
         }
 
-        return $this->render("user.html.twig", ["email" => $res->getEmail()]);
+        return $this->render("user.html.twig", ["lst" => $lst]);
     }
 }

@@ -1,5 +1,9 @@
 {%  extends 'base.html.twig' %}
 
 {% block body %}
-    Bonjour {{ email }} !
+    <title>list user</title>
+
+    {%  for elmt in lst %}
+        {% elmnt.email %}
+    {% endfor %}
 {% endblock %}
