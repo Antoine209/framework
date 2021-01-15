@@ -56,7 +56,7 @@ class AuthController extends AbstractController
             $entityManager->persist($user);
             $entityManager->flush();
 
-            return $this->redirectToRoute('/users');
+            return $this->redirectToRoute('user.html.twig');
         }
         return $this->render("login.html.twig", ["formulaire" => $finalForm->createView()]);
     }
