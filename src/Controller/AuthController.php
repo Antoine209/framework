@@ -56,7 +56,7 @@ class AuthController extends AbstractController
             $entityManager->persist($user);
             $entityManager->flush();
 
-            return $this->render("authok.html.twig", ["data" => $data]);
+            $this->showUsers();
         }
         return $this->render("login.html.twig", ["formulaire" => $finalForm->createView()]);
     }
@@ -64,7 +64,8 @@ class AuthController extends AbstractController
     /**
      * @Route("/users", name="users")
      */
-    public function showUsers() {
+    public function showUsers()
+    {
         $lst = $this->getDoctrine()->getRepository('App:User')->findAll();
 
         if(!$lst) {
