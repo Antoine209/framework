@@ -30,10 +30,10 @@ class AuthController extends AbstractController
     public function login(Request $request, TranslatorInterface $translator)
     {
         $login = [];
-        $form = $this->createFormBuilder($login);
+        $user = new User();
+        $form = $this->createFormBuilder($user, $login);
         $contrainte = new NotBlank();
         $entityManager = $this->getDoctrine()->getManager();
-        $user = new User();
 
         $form->add("email", EmailType::class, ['constraints' => [$contrainte, new Length(['min'=>3])]])
              ->add("password", RepeatedType::class, [
