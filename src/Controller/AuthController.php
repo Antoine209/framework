@@ -60,4 +60,17 @@ class AuthController extends AbstractController
         }
         return $this->render("login.html.twig", ["formulaire" => $finalForm->createView()]);
     }
+
+    /**
+     * @Route("/user/{id}", name="user", requirements={"id"="\d+"})
+     */
+    public function showUser($id) {
+        $res=$this->getDoctrine()->getRepository('User')->find($id);
+
+        if(!$res) {
+            throw $this->createNotFoundException('Aucun user ne correspond à l\'id'.$id);
+        }
+
+        return $this->render("user.html.twig", ["nom" => $res->getNom()]);
+    }
 }

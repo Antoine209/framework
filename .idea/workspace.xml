@@ -27,6 +27,8 @@
     <list default="true" id="81c012b7-9637-4bb0-a662-4584a32823b2" name="Default Changelist" comment="ajout ORM">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +219,7 @@
       <workItem from="1610092830465" duration="29340000" />
       <workItem from="1610631443347" duration="4111000" />
       <workItem from="1610636876589" duration="5115000" />
-      <workItem from="1610697191845" duration="11538000" />
+      <workItem from="1610697191845" duration="12790000" />
     </task>
     <task id="LOCAL-00001" summary="mise à jour de mon git">
       <created>1610701872667</created>
@@ -324,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610708686840</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ajout ORM">
+      <created>1610709175772</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610709175772</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
