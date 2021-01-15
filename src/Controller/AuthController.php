@@ -39,7 +39,7 @@ class AuthController extends AbstractController
                  'type' => PasswordType::class,
                  'options' => ['attr' => ['class' => 'password-field']],
                  'constraints' => [ new Length(['min' => 8, 'minMessage' => 'mot de passe trop court, minimum {{ limit }}']),
-                                    new Regex(['pattern' => "^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$^", 'message' => $translator->trans('password_invalid_pattern')])],
+                                    /*new Regex(['pattern' => "^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$^", 'message' => $translator->trans('password_invalid_pattern')])*/],
                  'required' => true,
                  'first_options'  => ['label' => 'mot de passe'],
                  'second_options' => ['label' => 'confirmer mot de passe'],
